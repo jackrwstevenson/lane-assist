@@ -12,14 +12,7 @@ You can register this repository as a Claude Code Plugin marketplace by running 
 /plugin marketplace add jackrwstevenson/lane-assist
 ```
 
-Then, to install a specific set of skills:
-
-1. Select `Browse and install plugins`
-2. Select `lane-assist`
-3. Select `lane-assist`
-4. Select `Install now`
-
-Alternatively, directly install via:
+Then, directly install via:
 
 ```
 /plugin install lane-assist@lane-assist
