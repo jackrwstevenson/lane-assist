@@ -1,0 +1,19 @@
+{
+  "name": "lane-assist",
+  "owner": {
+    "name": "Jack Stevenson"
+  },
+  "metadata": {
+    "description": "Lane assist",
+    "version": "0.0.1"
+  },
+  "plugins": [
+    {
+      "name": "lane-assist",
+      "description": "Collection of skills to assist agents in designing, building and testing digital products.",
+      "source": "./",
+      "strict": false,
+      "skills": ["./skills/skill-creator"]
+    }
+  ]
+}
