@@ -13,7 +13,7 @@
       "description": "Collection of skills to assist agents in designing, building and testing digital products.",
       "source": "./",
       "strict": false,
-      "skills": ["./skills/skill-creator"]
+      "skills": ["./skills/skill-creator", "./skills/red-green-refactor"]
     }
   ]
 }
