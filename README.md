@@ -9,13 +9,14 @@ Lane Assist is a modular toolkit for AI-assisted software engineering. It provid
 
 Skills are self-contained packages that give Claude specialised knowledge and workflows.
 
-| Skill             | Purpose                                                      |
-| ----------------- | ------------------------------------------------------------ |
-| **spec-creator**  | Create detailed specifications through iterative questioning |
-| **plan-creator**  | Break specs into step-by-step implementation plans           |
-| **code-creator**  | TDD workflow (RED → GREEN → REFACTOR)                        |
-| **debugger**      | Systematic debugging with root cause analysis                |
-| **skill-creator** | Create new skills for this marketplace                       |
+| Skill               | Purpose                                                      |
+| ------------------- | ------------------------------------------------------------ |
+| **spec-creator**    | Create detailed specifications through iterative questioning |
+| **plan-creator**    | Break specs into step-by-step implementation plans           |
+| **code-creator**    | TDD workflow (RED → GREEN → REFACTOR)                        |
+| **debugger**        | Systematic debugging with root cause analysis                |
+| **skill-creator**   | Create new skills for this marketplace                       |
+| **frontend-design** | Create distinctive, production-grade frontend interfaces     |
 
 ### Architecture
 

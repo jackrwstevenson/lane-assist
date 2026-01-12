@@ -17,6 +17,7 @@
         "./skills/skill-creator",
         "./skills/spec-creator",
         "./skills/plan-creator",
+        "./skills/frontend-design",
         "./skills/debugger",
         "./skills/code-creator"
       ]
