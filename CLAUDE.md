@@ -1,34 +1,52 @@
-# CLAUDE.md
+# Lane Assist
 
-This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+Modular toolkit for AI-assisted software engineering. Two components:
 
-## Concision
+1. **Skills** (`skills/`) — Agent skills extending Claude's capabilities
+2. **Workflow** (`workflow/`) — Best practice templates for human-AI collaboration
 
-In all interactions, be extremely concise and sacrifice grammar for the sake of concision.
+## Project Structure
 
-## Project Overview
+```
+lane-assist/
+├── skills/                    # Agent skills
+│   ├── spec-creator/          # Create specifications
+│   ├── plan-creator/          # Create implementation plans
+│   ├── code-creator/          # TDD workflow
+│   ├── debugger/              # Root cause debugging
+│   └── skill-creator/         # Create new skills
+├── workflow/                  # Best practice templates
+│   ├── README.md              # Guide for human engineers
+│   └── CLAUDE.md              # Guide for AI agents
+└── .claude-plugin/            # Plugin marketplace config
+```
 
-Lane Assist is a modular toolkit for creating Agent Skills - self-contained packages that extend Claude's capabilities. It's designed as a Claude Code Plugin marketplace, enabling teams to contribute and adopt skills for the product lifecycle.
+## Skills Architecture
 
-## Architecture
+Each skill is a self-contained directory:
 
-### Skills Structure
-
-Each skill is a self-contained directory with:
-
-- **SKILL.md** (required): YAML frontmatter (name, description) + Markdown documentation
+- **SKILL.md** (required): YAML frontmatter (`name`, `description`) + Markdown instructions
 - **scripts/**: Executable code for deterministic operations
 - **references/**: Documentation loaded into context as needed
-- **assets/**: Template files, images (NOT loaded into context)
+- **assets/**: Templates, images (NOT loaded into context)
 
 ### Progressive Disclosure
 
-Context is loaded in three levels to minimize token usage:
+Context loads in three levels to minimise token usage:
 
-1. **Metadata** (~100 words): Always loaded - skill name + description from YAML frontmatter
+1. **Metadata** (~100 words): Always loaded — skill name + description
 2. **SKILL.md body** (<5k words): Loaded when skill triggers
 3. **Bundled resources**: Loaded only as needed
 
 ### Plugin Configuration
 
-The `.claude-plugin/marketplace.json` registers this repository as a Claude Code Plugin marketplace. Skills are referenced by path in the `skills` array.
+`.claude-plugin/marketplace.json` registers skills. Update the `skills` array when adding/removing skills.
+
+## Workflow Templates
+
+The `workflow/` folder contains templates for other projects to adopt:
+
+- **workflow/README.md** — Human engineer guide for AI-assisted development
+- **workflow/CLAUDE.md** — AI agent guide for working relationships and process
+
+These are designed to be copied into target projects.
