@@ -5,7 +5,7 @@
   },
   "metadata": {
     "description": "Lane assist",
-    "version": "0.0.1"
+    "version": "0.0.2"
   },
   "plugins": [
     {
@@ -13,7 +13,13 @@
       "description": "Collection of skills to assist agents in designing, building and testing digital products.",
       "source": "./",
       "strict": false,
-      "skills": ["./skills/skill-creator", "./skills/red-green-refactor"]
+      "skills": [
+        "./skills/skill-creator",
+        "./skills/spec-creator",
+        "./skills/plan-creator",
+        "./skills/debugger",
+        "./skills/code-creator"
+      ]
     }
   ]
 }
