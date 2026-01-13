@@ -12,6 +12,8 @@ Treat AI as a powerful pair programmer requiring clear direction, context, and o
 
 **Use Opus 4.5 with thinking enabled. Execute in Plan mode (shift+tab twice in Claude Code).**
 
+Use the word "think" to trigger extended thinking mode, which gives Claude additional computation time to evaluate alternatives more thoroughly. These specific phrases are mapped directly to increasing levels of thinking budget in the system: "think" < "think hard" < "think harder" < "ultrathink." Each level allocates progressively more thinking budget for Claude to use.
+
 1. **Brainstorm requirements** — Describe your idea and have the AI ask clarifying questions until requirements and edge cases are fleshed out.
 
 2. **Create SPEC.md** — Compile requirements, architecture decisions, data models, and testing strategy into a single document.
