@@ -14,13 +14,15 @@ Treat AI as a powerful pair programmer requiring clear direction, context, and o
 
 Use the word "think" to trigger extended thinking mode, which gives Claude additional computation time to evaluate alternatives more thoroughly. These specific phrases are mapped directly to increasing levels of thinking budget in the system: "think" < "think hard" < "think harder" < "ultrathink." Each level allocates progressively more thinking budget for Claude to use.
 
-1. **Brainstorm requirements** — Describe your idea and have the AI ask clarifying questions until requirements and edge cases are fleshed out.
+1. **Provide context** — Ask Claude to read relevant files, images, or URLs, providing either general pointers ("read the file that handles logging") or specific filenames ("read logging.py"), but explicitly tell it not to write any code just yet.
 
-2. **Create SPEC.md** — Compile requirements, architecture decisions, data models, and testing strategy into a single document.
+2. **Brainstorm requirements** — Describe your idea and have the AI ask clarifying questions until requirements and edge cases are fleshed out.
 
-3. **Create PLAN.md** — Break implementation into logical, bite-sized tasks or milestones. Iterate on this plan until it's coherent.
+3. **Create SPEC.md** — Compile requirements, architecture decisions, data models, and testing strategy into a single document.
 
-4. **Refine in Plan mode** — Go back and forth with Claude until you're satisfied with the plan. A good plan is critical—once solid, switch to auto-accept mode for execution.
+4. **Create PLAN.md** — Break implementation into logical, bite-sized tasks or milestones. Iterate on this plan until it's coherent.
+
+5. **Refine in Plan mode** — Go back and forth with Claude until you're satisfied with the plan. A good plan is critical—once solid, switch to auto-accept mode for execution.
 
 ---
 
