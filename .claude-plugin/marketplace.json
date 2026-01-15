@@ -19,7 +19,8 @@
         "./skills/plan-creator",
         "./skills/frontend-design",
         "./skills/debugger",
-        "./skills/code-creator"
+        "./skills/code-creator",
+        "./skills/threat-modeler"
       ]
     }
   ]
