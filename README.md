@@ -15,6 +15,7 @@ Skills are self-contained packages that give Claude specialised knowledge and wo
 | **plan-creator**    | Break specs into step-by-step implementation plans           |
 | **code-creator**    | TDD workflow (RED → GREEN → REFACTOR)                        |
 | **debugger**        | Systematic debugging with root cause analysis                |
+| **threat-modeler**  | Security threat analysis using OWASP MASVS and ASVS          |
 | **skill-creator**   | Create new skills for this marketplace                       |
 | **frontend-design** | Create distinctive, production-grade frontend interfaces     |
 
