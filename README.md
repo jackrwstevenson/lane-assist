@@ -67,3 +67,7 @@ The `workflow/` folder contains best practice guides for AI-assisted software en
 These files are designed to be copied into your own projects to bootstrap effective human-AI collaboration.
 
 > **Coming soon**: Automatic workflow bootstrapping as part of the plugin installation.
+
+## Inspiration
+
+Credit to Chris Hay, Addy Osmani & Jesse Vincent on being the inspration for the workflow and skills within.
